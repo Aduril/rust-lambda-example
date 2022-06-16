@@ -8,6 +8,7 @@ export class LambdaStack extends cdk.Stack {
       code: lambda.Code.fromAsset("../artifacts"),
       handler: "unrelated",
       runtime: lambda.Runtime.PROVIDED_AL2,
+      functionName: "BabysVeryFirstRustLambda",
     });
     // The code that defines your stack goes here
   }
